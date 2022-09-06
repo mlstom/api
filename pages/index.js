@@ -13,7 +13,7 @@ export default function Home({data}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     {
-      data?.map((movie)=><p>{movie.title}</p>)
+      data?.map((movie)=><p key={movie.id}>{movie.title}</p>)
     }
       
     </div>
